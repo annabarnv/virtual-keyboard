@@ -1,0 +1,17 @@
+.textarea {
+  line-height: 22px;
+    width: 890px;
+    height: 140px;
+    resize: none;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+    &:focus {
+      outline: none;
+      border: 1px solid darken(#ddd, 10%);
+    }
+    &[placeholder] { 
+
+    }
+  }
