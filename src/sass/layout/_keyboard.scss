@@ -1,0 +1,75 @@
+.keyboard {
+  max-width: 890px;
+  min-height: 100px;
+  background-color: #ececec;
+  padding: 25px 10px 15px 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 8px;
+}
+
+.key-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 5px;
+  background: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  box-shadow: 0 3px 0 1px #d9d9d9;
+  border-radius: 5px;
+  color: #4f4f4f;
+  cursor: pointer;
+  user-select: none;
+
+  &.small-btn {
+      width: 40px;
+  }
+
+  &.ctrl-right-btn {
+      width: 50px;
+  }
+
+  &.medium-btn {
+      width: 60px;
+  }
+
+  &.large-btn {
+      width: 110px;
+  }
+
+  &.xxl-btn {
+      width: 379px;
+  }
+}
+
+.key-btn.capslock {
+  position: relative;
+}
+
+.key-btn.pressed {
+  background: #eeeded;
+  color: #414141;
+  position: relative;
+  top: 3px;
+  box-shadow: 0 0 0 1px #e0e0e0;
+  border-bottom-color: #d9d9d9;
+  transition: 0.1s;
+}
+
+.capslock-status {
+  color: #616161;
+  font-size: 12px;
+  position: absolute;
+  top: -1px;
+  right: 5px;
+}
+
+.key-btn.active .capslock-status {
+  color: #8cf800;
+  text-shadow: 0 0 10px #73cb00,
+}
